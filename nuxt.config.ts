@@ -1,5 +1,5 @@
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindTypography from '@tailwindcss/typography'
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -7,6 +7,26 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
     'nuxt-bootstrap-icons',
-    '@nuxt/content'
-  ]
+    '@nuxt/content',
+    '@nuxtjs/mdc',
+      '@nuxt/ui',
+      '@nuxtjs/apollo'
+  ],
+  runtimeConfig:{
+    githubToken: process.env.GITHUB_TOKEN ,
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    },
+  },
+  css: ["@/assets/css/tailwind.css"],
+  apollo: {
+    clients: {
+      default: {
+        tokenName: 'github-token',
+        httpEndpoint: 'https://api.github.com/graphql',
+      }
+    },
+  }
 })

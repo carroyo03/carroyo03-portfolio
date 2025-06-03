@@ -7,7 +7,7 @@ const links = [
 </script>
 
 <template>
-  <footer class="bg-gray-800">
+  <footer class="bg-gray-800 mt-auto">
     <section class="mx-auto max-w-7xl px-2 sm:px-4 lg:py-6 text-gray-300 flex flex-row">
       <p class="flex-1">&copy; 2025 Carlos G. Arroyo Lorenzo. All rights reserved.</p>
       <div class="flex flex-row justify-center gap-4 mb-4 mt-2">
