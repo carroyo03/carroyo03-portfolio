@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
@@ -26,6 +27,9 @@
     "@iconify-json/heroicons": "^1.2.2",
     "@nuxt/eslint-config": "^1.4.1",
     "@nuxtjs/apollo": "^5.0.0-alpha.14",
-    "@tailwindcss/typography": "^0.5.16"
+    "@tailwindcss/typography": "^0.5.16",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "@vue/test-utils": "^2.4.6",
+    "vitest": "^2.0.0"
   }
 }

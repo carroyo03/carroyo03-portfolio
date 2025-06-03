@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   runtimeConfig:{
     githubToken: process.env.GH_TOKEN,
     public: {
-      githubToken: process.env.GH_TOKEN
+      // githubToken: process.env.GH_TOKEN // This line is removed
     }
   },
   tailwindcss: {
