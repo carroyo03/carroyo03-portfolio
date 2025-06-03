@@ -9,7 +9,7 @@ const props = defineProps(['posts'])
       <img :src="post.cover" alt="Post Cover" class="w-full h-48 object-cover">
     </NuxtLink>
     <div class="p-6">
-      <h2 class="text-xl font-bold mb-2">{{ post.title }}</h2>
+      <h2 class="text-xl font-bold mb-2 dark:text-black">{{ post.title }}</h2>
       <p class="text-gray-700 mb-4">{{ post.description }}</p>
       <NuxtLink :to="post.path"
                 class="inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded float-right
