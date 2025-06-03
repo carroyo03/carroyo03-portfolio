@@ -13,7 +13,10 @@ export default defineNuxtConfig({
       '@nuxtjs/apollo'
   ],
   runtimeConfig:{
-    githubToken: process.env.GH_TOKEN ,
+    githubToken: process.env.GH_TOKEN,
+    public: {
+      githubToken: process.env.GH_TOKEN
+    }
   },
   tailwindcss: {
     config: {
