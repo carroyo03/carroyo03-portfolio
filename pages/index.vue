@@ -31,7 +31,7 @@ const query = gql `
     }
   }
 }`
-const { data: projects } = await useGitHubProjects(3)
+const { data: projects, error, pending } = await useGitHubProjects(3)
 </script>
 
 <template>
@@ -60,7 +60,13 @@ const { data: projects } = await useGitHubProjects(3)
   </section>
   <section>
     <h2 class="text-3xl font-bold mt-8">Latest Projects</h2>
-    <div class="grid md:grid-cols-3 pt-8 gap-10">
+    <div v-if="pending" class="text-lg mt-5">
+      Loading projects...
+    </div>
+    <div v-else-if="error" class="text-red-500">
+      Error loading projects: {{ error.message }}
+    </div>
+    <div v-else class="grid md:grid-cols-3 pt-8 gap-10">
       <ListProjects :data="projects" />
     </div>
   </section>
