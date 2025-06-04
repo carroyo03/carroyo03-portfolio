@@ -40,13 +40,16 @@ const { data: projects } = await useGitHubProjects(3)
     <p class="text-xl mt-5">I am a Computer Scientist, passionate about AI, Software Development and Cloud</p>
   </section>
   <section class = "flex flex-col md:flex-row">
-    <div class="md:w-4/5">
-      <h2 class="text-3xl font-bold mt-10">About me</h2>
-      <p class="text-xl mt-5">Computer Scientist from CUNEF, passionate about AI, DevOps and Big Data, with a focus on building scalable, impactful solutions. As a Software DataOps Engineering Intern at KPMG Tax & Legal Technology for 10 months, I developed real-world tools, including pension simulation web apps with Python (Reflex), cloud automation via Azure Functions, and data pipelines using Blue Prism and Alteryx—enhancing efficiency for banking and tax clients.</p>
-      <p class="text-xl mt-5">My portfolio showcases projects like <strong>AnomalyDetect</strong>, an AIOps service for anomaly detection using PyTorch, Flask, Docker, and PySpark on Databricks, reflecting my expertise in AI-driven IT operations and Cloud deployments.</p>
-      <p class="text-xl mt-5">Proficient in Python, Java, C++, SQL, Docker, and PySpark (learning right now), I thrive on creative problem-solving, as seen in past works like an A* pathfinding algorithm and a C++ Spotify recommender.</p>
-      <p class="text-xl mt-5">A four-year elected class representative, I bring strong leadership and teamwork skills, honed through Agile practices at KPMG. Currently advancing my Cloud expertise with the AWS Developer Associate course, I'm always eager to learn and innovate. Beyond tech, I enjoy singing, chess, reading, and traveling.</p>
-    </div>
+    <section class="my-8">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <div class="text-gray-300">
+        <p><strong>Experience:</strong> Software DataOps Engineering Intern at KPMG Tax & Legal Technology (10 months), building pension simulation web apps (Reflex), cloud automation (Azure Functions), and data pipelines (Blue Prism, Alteryx).</p>
+        <p><strong>Key Projects:</strong> <a href="https://github.com/carroyo03/AnomalyDetect" class="text-blue-400 underline">AnomalyDetect</a> (AIOps with PyTorch, Flask, Docker, PySpark, Databricks), A* pathfinding (Python), Spotify recommender (C++).</p>
+        <p><strong>Leadership:</strong> Elected class representative for 4 years, honed Agile skills at KPMG.</p>
+        <p><strong>Learning:</strong> Pursuing AWS Developer Associate and Master in Big Data, Data Science and AI.</p>
+        <p><strong>Hobbies:</strong> Singing, chess, reading, traveling.</p>
+      </div>
+    </section>
     <div class="w-1/2 md:max-w-sm p-8 mx-auto">
       <img src="/assets/images/carlos.jpg" alt="Carlos G. Arroyo Lorenzo" class="rounded-lg shadow-xl/30"/>
     </div>

@@ -2,7 +2,7 @@ export const useGitHubProjects = (limit: number = 8) => {
     const query = gql `
   {
     viewer {
-      repositories(first: ${limit}, orderBy: {field: CREATED_AT, direction: DESC}) {
+      repositories(first: ${limit}, orderBy: {field: STARGAZERS, direction: DESC}, isFork: false) {
         totalCount
         nodes {
           id
