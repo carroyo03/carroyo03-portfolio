@@ -5,7 +5,7 @@ const props = defineProps(['data'])
 
 <template>
   <ProjectCard
-      v-for="project in props.data?.viewer.repositories.nodes"
+      v-for="project in props.data?.nodes"
       :key="project.id"
       :project="project"
   />
